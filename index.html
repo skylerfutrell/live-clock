@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Clock</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="clock-container">
+        <div class="digital-clock"></div>
+        <div class="alarm-container">
+          <input type="time" id="alarm-time" />
+          <label>
+            <input type="checkbox" id="alarm-toggle" />
+            Enable Alarm
+          </label>
+        </div>
+        <button class="radio-button">📻 Play Radio</button>
+      </div>
+      <audio id="alarm-sound" src="sounds/alarm-clock-01.mp3"></audio>
+      <audio id="radio-song" src="sounds/iron-man-01.mp3"></audio>   
+</body>
+</html>

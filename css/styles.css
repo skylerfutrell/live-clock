@@ -1,0 +1,89 @@
+/* Import cool fonts */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+html {
+  height: 100%;
+  background: radial-gradient(circle, #1a1a2e, #16213e, #0f3460);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-container {
+  text-align: center;
+}
+
+.digital-clock {
+  width: 250px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 3rem;
+  font-family: "Orbitron", sans-serif;
+  color: #fff;
+  text-align: center;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #ff00ff, #00ffff, #ff0000, #ffff00);
+  background-size: 400% 400%;
+  animation: glow 2s linear infinite alternate, bgShift 4s ease infinite;
+  box-shadow: 0 0 15px #ff00ff;
+}
+.radio-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: "Orbitron", sans-serif;
+  background: #ff00ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff00ff;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.radio-button:hover {
+  background: #00ffff;
+  box-shadow: 0 0 15px #00ffff;
+  transform: scale(1.1);
+}
+
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+  }
+  to {
+    text-shadow: 0 0 20px #ffff00, 0 0 30px #ff0000;
+  }
+}
+
+@keyframes bgShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.alarm-container {
+  margin-top: 15px;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+}
+
+input[type="time"] {
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+input[type="radio"] {
+  accent-color: #ff00ff;
+}
