@@ -18,22 +18,28 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       isPlaying = !isPlaying;
     });
-  });
-  
-  function clockUpdate() {
+
+    // Mouse move effect to change background color
+    document.addEventListener("mousemove", function (e) {
+        // Get the mouse position relative to the window's size
+        const x = (e.clientX / window.innerWidth) * 255; // Normalize X position to RGB range (0-255)
+        const y = (e.clientY / window.innerHeight) * 255; // Normalize Y position to RGB range (0-255)
+
+        // Set the new background color using the mouse position
+        document.body.style.backgroundColor = `rgb(${Math.floor(x)}, ${Math.floor(y)}, 150)`;
+    });
+});
+
+function clockUpdate() {
     let date = new Date();
-    let h = addZero(twelveHour(date.getHours()));
+    let h = addZero(date.getHours());
     let m = addZero(date.getMinutes());
     let s = addZero(date.getSeconds());
-  
+
     document.querySelector(".digital-clock").innerHTML = `${h}:${m}:${s}`;
-  }
-  
-  function addZero(x) {
+}
+
+function addZero(x) {
     return x < 10 ? "0" + x : x;
-  }
-  
-  function twelveHour(x) {
-    return x > 12 ? x - 12 : x == 0 ? 12 : x;
-  }
-  
+}
+
