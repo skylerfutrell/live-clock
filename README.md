@@ -155,9 +155,7 @@ License:
 
 🔗 Connect With Me:
 
-Website:
-
-LinkedIn: 
+[Website](https://www.futrellstudioportfolio.com)
 
 
 
