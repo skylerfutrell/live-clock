@@ -149,9 +149,9 @@ Want to tweak the project? Here’s how you can customize it:
 
 License:
 
-                This project is open-source and available under the MIT License. Feel free to use, modify, and distribute it.
+This project is open-source and available under the MIT License. [LICENSE](https://github.com/skylerfutrell/live-clock/blob/main/LICENSE)
 
-                Copyright (c) [2024] [Skyler Futrell]
+                
 
 🔗 Connect With Me:
 
